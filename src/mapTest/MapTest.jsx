@@ -21,7 +21,7 @@ const MapTest = ({ children }) => {
         new FullScreen(),
       ]),
       interactions: defaultInteractions().extend([new DragRotateAndZoom()]),
-      // OSM : Open Street Map
+      // OSM : Open Street Map의 약자
       layers: [
         new TileLayer({
           source: new OSM(),
