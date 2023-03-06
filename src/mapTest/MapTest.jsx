@@ -16,12 +16,12 @@ const MapTest = ({ children }) => {
   const [mapObj, setMapObj] = useState({});
 
   useEffect(() => {
-    //Map 객체 생성 및 vworld 지도 설정
     const map = new OlMap({
       controls: defaultControls({ zoom: false, rotate: false }).extend([
         new FullScreen(),
       ]),
       interactions: defaultInteractions().extend([new DragRotateAndZoom()]),
+      // OSM : Open Street Map
       layers: [
         new TileLayer({
           source: new OSM(),
