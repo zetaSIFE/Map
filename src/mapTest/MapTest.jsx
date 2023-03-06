@@ -31,7 +31,6 @@ const MapTest = ({ children }) => {
             url: "http://localhost:9999/geoserver/korea/wms",
             params: { LAYERS: "korea:gbmap", TILED: true }, //workspace:layer
             serverType: "geoserver",
-            // Countries have transparency, so do not fade tiles:
             transition: 0,
           }),
         }),
